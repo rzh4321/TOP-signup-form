@@ -1,0 +1,21 @@
+body {
+    display: flex;
+}
+
+.bg-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transparent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
