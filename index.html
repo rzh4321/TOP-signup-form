@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Roboto+Slab:wght@600&family=Work+Sans&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
             Photo by <span class="credits"> Halie West </span> on <span> Unsplash </span>
         </div>
     </div>
-    <div class="main">
+    <form action='POST' class="main">
         <div class="top">
             <p>THis is not a real online service1 You know you  need sometiing like this in your 
                 life to help you realize your deepest dreams. Sign up now to get started.
@@ -53,19 +54,19 @@
             </div>
             <div class="form-row">
                 <div class="row-item">
-                    <label for="pw">PASSWORD</label>
-                    <input type="password" id="pw" size="30">
+                    <label for="pw">PASSWORD*</label>
+                    <input type="password" id="pw" size="30" required>
                 </div>
                 <div class="row-item">
-                    <label for="confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm" size="30">
+                    <label for="confirm">CONFIRM PASSWORD*</label>
+                    <input type="password" id="confirm" size="30" required>
                 </div>
             </div>
         </div>
         <div class="bottom">
-            <button>Create Account</button>
+            <button id="create-account" type="submit">Create Account</button>
             <div>Already have an account? <a class="login" href="#"> Log in</a></div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
