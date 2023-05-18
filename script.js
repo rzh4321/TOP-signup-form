@@ -3,6 +3,7 @@ submit.addEventListener('click', (e) => {
     if (!checkPasswords()) {
         document.getElementById('pw').classList.add('invalid');
         document.getElementById('confirm').classList.add('invalid');
+        e.preventDefault();
     }
 })
 
